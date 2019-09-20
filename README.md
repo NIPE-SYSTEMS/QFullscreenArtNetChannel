@@ -6,6 +6,8 @@ This application listens for ArtNetDmx packets and extracts 3 channels to fill a
 
 ![](screenshot.png)
 
+The screenshot shows [QLC+](https://www.qlcplus.org/) in the foreground and the application in the background displaying the RGB color set by QLC+.
+
 ## Usage
 
 ```
