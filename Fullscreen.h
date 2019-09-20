@@ -1,5 +1,4 @@
-#ifndef FULLSCREEN_H
-#define FULLSCREEN_H
+#pragma once
 
 #include <QWidget>
 
@@ -9,6 +8,8 @@ class Fullscreen : public QWidget
 
 public:
     Fullscreen(QWidget *parent = nullptr);
-    ~Fullscreen();
+    ~Fullscreen() override;
+
+protected:
+    void paintEvent(QPaintEvent *event) override;
 };
-#endif // FULLSCREEN_H
