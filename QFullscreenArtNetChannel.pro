@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,10 +17,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    Fullscreen.cpp
+    Fullscreen.cpp \
+    qlcplus/plugins/artnet/src/artnetcontroller.cpp \
+    qlcplus/plugins/artnet/src/artnetpacketizer.cpp
 
 HEADERS += \
-    Fullscreen.h
+    Fullscreen.h \
+    qlcplus/plugins/artnet/src/artnetcontroller.h \
+    qlcplus/plugins/artnet/src/artnetpacketizer.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
