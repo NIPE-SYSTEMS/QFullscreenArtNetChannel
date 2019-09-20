@@ -1,0 +1,4 @@
+[submodule "qlcplus"]
+	path = qlcplus
+	url = https://github.com/mcallegari/qlcplus.git
+	branch = master
