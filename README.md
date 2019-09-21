@@ -1,4 +1,4 @@
-# QFullscreenArtNetChannel
+# QFullscreenArtNetNode
 
 Simple app to display 3 RGB ArtNet channels as fullscreen window.
 
@@ -11,7 +11,7 @@ The screenshot shows [QLC+](https://www.qlcplus.org/) in the foreground and the 
 ## Usage
 
 ```
-Usage: QFullscreenArtNetChannel INTERFACE UNIVERSE CHANNEL
+Usage: QFullscreenArtNetNode INTERFACE UNIVERSE CHANNEL
 ```
 
 - `INTERFACE`: a name of a present network interface where the application will listen for packets
@@ -19,7 +19,7 @@ Usage: QFullscreenArtNetChannel INTERFACE UNIVERSE CHANNEL
 - `CHANNEL`: the channel offset (starting from zero), the application will use the given channel and the two next for RGB values
 
 ```
-./QFullscreenArtNetChannel lo 0 10
+./QFullscreenArtNetNode lo 0 10
 ```
 
 This will listen on the local interface at universe 0 and will use channels 10, 11, 12.
